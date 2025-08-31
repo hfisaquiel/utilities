@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Unpacker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>URL Unpacker</h1>
+      <div class="example">
+        Example:
+        <code>scheme://host/path?param1=value1&amp;param2=value2#fragment</code>
+      </div>
+      <textarea id="uriInput" placeholder="Paste your URI here"></textarea>
+      <button id="decodeBtn">Decode & Unpack</button>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+    <template id="uri-template">
+      <div class="param">
+        <dl class="uri-fields">
+          <dt class="field-protocol">Protocol:</dt>
+          <dd class="protocol"></dd>
+          <dt class="field-url">URL:</dt>
+          <dd class="url"></dd>
+          <dt class="field-path">Path:</dt>
+          <dd class="path"></dd>
+          <dt class="field-fragment" style="display: none">Fragment Path:</dt>
+          <dd class="fragment" style="display: none"></dd>
+          <dt class="field-param" style="display: none">Parameters:</dt>
+          <dd style="padding: 0; margin: 0">
+            <dl class="param-list"></dl>
+          </dd>
+        </dl>
+      </div>
+    </template>
+  </body>
+</html>

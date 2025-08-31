@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap');
+
+* {
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 40px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #2a3a5e;
+  letter-spacing: 1px;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 16px 18px;
+  margin: 0 0 18px 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  border: 2px solid #bcdffb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fafdff;
+  transition: border-color 0.2s;
+  word-break: break-all;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+input[type='text']:focus,
+textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+button {
+  padding: 12px 28px;
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.example {
+  font-size: 1em;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+#result {
+  margin-top: 24px;
+  padding: 2px;
+  background: #fff;
+}
+
+#result:empty {
+  display: none;
+}
+
+#result>.param,
+.uri-fields dd.nested {
+  padding: 0px 8px 6px;
+  border: 1px solid var(--border-color, #e3eaf2);
+  border-radius: 4px;
+  background: none;
+}
+
+.param>span:empty {
+  display: none;
+}
+
+.param .param {
+  margin: 8px 0px 0px;
+}
+
+.uri-fields {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4em 1em;
+  align-items: center;
+}
+
+.uri-fields dt {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  place-self: baseline;
+}
+
+.uri-fields dd {
+  margin: 0;
+  padding: 0;
+  word-wrap: anywhere;
+  word-break: break-all;
+}
+
+.param-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5em 1em;
+  align-items: center;
+}
+
+ol.param-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol.param-list li::marker {
+  font-size: smaller;
+  color: inherit;
+}
+
+.param-list .nested span.field-param-value {
+  font-weight: bold;
+  padding: 8px 0px 0px;
+  display: block;
+}
+
+dt[class^="field-"] {
+  font-weight: bold;
+}
+
+.field-protocol {
+  color: #1565c0;
+}
+
+.field-url {
+  color: #33691e;
+}
+
+.field-fragment {
+  color: #e65100;
+}
+
+.field-param {
+  color: #ad1457;
+}
+
+.field-path {
+  color: #6a1b9a;
+}
