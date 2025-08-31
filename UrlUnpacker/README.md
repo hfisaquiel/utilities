@@ -32,4 +32,6 @@ https://example.com/api?user=alice&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 
 ## License
 
-MIT
+This project is licensed under the Apache License, Version 2.0. Any public use, distribution, or derivative work must mention the main creator, Henry F. Isaquiel, in documentation, credits, or about sections.
+
+See the full license text at [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
